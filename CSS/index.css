@@ -1,0 +1,137 @@
+*{
+    margin: 0; 
+}
+
+body {
+    /* background: url(../Images/pixabay\ background.jpg);  */
+         background-color: #f0f0f0 ; 
+         /* overflow-x: hidden; */
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:root {
+  --appearance: rgb(62, 65, 67);
+  --appearance-2: rgb(106, 111, 115);
+}
+.flex {
+  display: flex;
+}
+
+/* Start of Nav bar styling */
+ header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    padding: 30px;
+    background: rgb(206, 231, 154);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    position: fixed; 
+}
+
+nav a {
+ margin-left: 20px;
+ text-decoration: none;
+}
+
+nav a:hover  {
+    color: red;
+    transition: .3s;
+}
+/* End of Nav bar styling */
+
+
+
+/* Hero section styling */
+#hero {
+    height: 100vh;
+    width: 100%;
+    background-color: midnightblue !important;
+    padding-top: 10px;
+
+}
+
+#hero-content {
+    color: white;
+    height: 120px;
+    width: 350px;
+    margin: 70px;
+    margin-top: 15%;
+    position: relative;  
+
+}
+
+#hero h2 span {
+    color: red;
+}
+
+#hero img {
+position: absolute;
+left: 70%;
+top: 40%;
+border-radius: 15px;
+}
+/* Hero section styling */
+
+
+/* About section styling */
+#about {
+padding-top: 30px; 
+scroll-behavior: smooth;
+width: 100%;
+height: 100vh;
+background: rgb(206, 231, 154);
+/* margin: 20px; */
+
+}
+/* About section styling */
+
+
+/* Service section styling */
+#service {
+    background-color: midnightblue;
+    padding-top: 30px;
+    width: 100%;
+    height: 100vh;
+    padding-left: 15px;
+    /* margin: 20px; */
+
+}
+/* Service section styling */
+
+
+/* Contact section styling */
+#contact {
+    padding-top: 30px;
+    padding-left: 15px;
+    width: 100%;   
+    /* margin: 20px; */
+
+}
+/* Contact section styling */
+
+/* #image {
+     display: flex;
+    gap: 3px;
+    width: 100%; 
+   
+} */
+
+
+
+#image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    /* grid-template-columns: repeat(2, 1fr); */
+    margin-top: 20px;
+    padding: 30px;
+
+}
+
