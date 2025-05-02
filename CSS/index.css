@@ -125,7 +125,7 @@ background: rgb(206, 231, 154);
 } */
 
 
-
+/* 
 #image {
     display: grid;
     grid-template-columns: repeat(3, 1fr); 
@@ -151,5 +151,31 @@ background: rgb(206, 231, 154);
         opacity: 1;
         transform: translateY(0);
     }
+} */
+
+#image {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 20px;
+    padding: 30px;
+    opacity: 0; /* Initially hidden */
+    transform: translateY(50px);
+    animation: fadeUp 2s ease-in-out forwards;
 }
 
+@keyframes fadeUp {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+#talk {
+    background-color: rgb(206, 231, 154);
+}
